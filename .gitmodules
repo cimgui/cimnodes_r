@@ -1,0 +1,4 @@
+[submodule "ImNodes"]
+	path = ImNodes
+	url = https://github.com/rokups/ImNodes
+	branch = master

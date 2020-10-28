@@ -1,0 +1,102 @@
+{
+  "enums": {
+    "StyleColor": [
+      {
+        "calc_value": 0,
+        "name": "ColCanvasLines",
+        "value": "0"
+      },
+      {
+        "calc_value": 1,
+        "name": "ColNodeBg",
+        "value": "1"
+      },
+      {
+        "calc_value": 2,
+        "name": "ColNodeActiveBg",
+        "value": "2"
+      },
+      {
+        "calc_value": 3,
+        "name": "ColNodeBorder",
+        "value": "3"
+      },
+      {
+        "calc_value": 4,
+        "name": "ColConnection",
+        "value": "4"
+      },
+      {
+        "calc_value": 5,
+        "name": "ColConnectionActive",
+        "value": "5"
+      },
+      {
+        "calc_value": 6,
+        "name": "ColSelectBg",
+        "value": "6"
+      },
+      {
+        "calc_value": 7,
+        "name": "ColSelectBorder",
+        "value": "7"
+      },
+      {
+        "calc_value": 8,
+        "name": "ColMax",
+        "value": "8"
+      }
+    ]
+  },
+  "locations": {
+    "CanvasState": "ImNodes:55",
+    "SlotInfo": "ImNodesEz:35",
+    "StyleColor": "ImNodes:40",
+    "style_": "ImNodes:64"
+  },
+  "structs": {
+    "CanvasState": [
+      {
+        "name": "zoom",
+        "type": "float"
+      },
+      {
+        "name": "offset",
+        "type": "ImVec2"
+      },
+      {
+        "name": "colors[ColMax]",
+        "size": 8,
+        "type": "ImColor"
+      },
+      {
+        "name": "style",
+        "type": "style_"
+      },
+      {
+        "name": "_impl",
+        "type": "_CanvasStateImpl*"
+      }
+    ],
+    "SlotInfo": [
+      {
+        "name": "title",
+        "type": "const char*"
+      },
+      {
+        "name": "kind",
+        "type": "int"
+      }
+    ],
+    "style_": [
+      {
+        "name": "curve_thickness",
+        "type": "float"
+      },
+      {
+        "name": "connection_indent",
+        "type": "float"
+      }
+    ]
+  }
+}
