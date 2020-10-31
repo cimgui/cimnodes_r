@@ -124,7 +124,7 @@ cimgui_header = cimgui_header:gsub("XXX",implot_version)
 print("IMNODES_VERSION",implot_version)
 --]=]
 
--------------funtion for parsing implot headers
+-------------funtion for parsing ImNodes headers
 local function parseImGuiHeader(header,names)
 	--prepare parser
 	local parser = cpp2ffi.Parser()

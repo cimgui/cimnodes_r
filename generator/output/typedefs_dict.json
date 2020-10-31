@@ -1,6 +1,6 @@
 {
   "CanvasState": "struct CanvasState",
+  "CanvasStyle": "struct CanvasStyle",
   "SlotInfo": "struct SlotInfo",
-  "_CanvasStateImpl": "struct _CanvasStateImpl",
-  "style_": "struct style_"
+  "_CanvasStateImpl": "struct _CanvasStateImpl"
 }

@@ -42,7 +42,7 @@ typedef unsigned __int64 ImU64;
 
 #ifdef CIMGUI_DEFINE_ENUMS_AND_STRUCTS
 typedef struct SlotInfo SlotInfo;
-typedef struct style_ style_;
+typedef struct CanvasStyle CanvasStyle;
 typedef struct CanvasState CanvasState;
 typedef struct _CanvasStateImpl _CanvasStateImpl;
 
@@ -58,7 +58,7 @@ typedef enum {
     ColSelectBorder,
     ColMax
 }StyleColor;
-struct style_
+struct CanvasStyle
 {
         float curve_thickness;
         float connection_indent;
@@ -68,7 +68,7 @@ struct CanvasState
     float zoom;
     ImVec2 offset;
     ImColor colors[ColMax];
-    style_ style;
+    CanvasStyle style;
     _CanvasStateImpl* _impl;
 };
 struct SlotInfo
@@ -81,9 +81,9 @@ struct SlotInfo
 
 #ifndef CIMGUI_DEFINE_ENUMS_AND_STRUCTS
 typedef ImNodes::CanvasState CanvasState;
+typedef ImNodes::CanvasState::CanvasStyle CanvasStyle;
 typedef ImNodes::Ez::SlotInfo SlotInfo;
 typedef ImNodes::_CanvasStateImpl _CanvasStateImpl;
-typedef ImNodes::CanvasState::style_ style_;
 typedef ImNodes::StyleColor StyleColor;
 #endif //CIMGUI_DEFINE_ENUMS_AND_STRUCTS
 CIMGUI_API CanvasState* CanvasState_CanvasState(void);

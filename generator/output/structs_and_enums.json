@@ -50,9 +50,9 @@
   },
   "locations": {
     "CanvasState": "ImNodes:55",
+    "CanvasStyle": "ImNodes:64",
     "SlotInfo": "ImNodesEz:35",
-    "StyleColor": "ImNodes:40",
-    "style_": "ImNodes:64"
+    "StyleColor": "ImNodes:40"
   },
   "structs": {
     "CanvasState": [
@@ -71,11 +71,21 @@
       },
       {
         "name": "style",
-        "type": "style_"
+        "type": "CanvasStyle"
       },
       {
         "name": "_impl",
         "type": "_CanvasStateImpl*"
+      }
+    ],
+    "CanvasStyle": [
+      {
+        "name": "curve_thickness",
+        "type": "float"
+      },
+      {
+        "name": "connection_indent",
+        "type": "float"
       }
     ],
     "SlotInfo": [
@@ -86,16 +96,6 @@
       {
         "name": "kind",
         "type": "int"
-      }
-    ],
-    "style_": [
-      {
-        "name": "curve_thickness",
-        "type": "float"
-      },
-      {
-        "name": "connection_indent",
-        "type": "float"
       }
     ]
   }

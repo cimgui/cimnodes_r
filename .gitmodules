@@ -1,4 +1,4 @@
 [submodule "ImNodes"]
 	path = ImNodes
-	url = https://github.com/sonoro1234/ImNodes-1
-	branch = ignore_connections
+	url = https://github.com/rokups/ImNodes
+	branch = master
