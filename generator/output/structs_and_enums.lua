@@ -37,6 +37,7 @@ defs["enums"]["StyleColor"][9] = {}
 defs["enums"]["StyleColor"][9]["calc_value"] = 8
 defs["enums"]["StyleColor"][9]["name"] = "ColMax"
 defs["enums"]["StyleColor"][9]["value"] = "8"
+defs["enumtypes"] = {}
 defs["locations"] = {}
 defs["locations"]["CanvasState"] = "ImNodes:55"
 defs["locations"]["CanvasStyle"] = "ImNodes:64"

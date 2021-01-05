@@ -48,6 +48,7 @@
       }
     ]
   },
+  "enumtypes": [],
   "locations": {
     "CanvasState": "ImNodes:55",
     "CanvasStyle": "ImNodes:64",
