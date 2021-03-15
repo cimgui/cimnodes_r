@@ -50,42 +50,42 @@
   },
   "enumtypes": [],
   "locations": {
-    "CanvasState": "ImNodes:55",
-    "CanvasStyle": "ImNodes:64",
+    "CanvasState": "ImNodes:53",
+    "CanvasStyle": "ImNodes:62",
     "SlotInfo": "ImNodesEz:35",
-    "StyleColor": "ImNodes:40"
+    "StyleColor": "ImNodes:38"
   },
   "structs": {
     "CanvasState": [
       {
-        "name": "zoom",
+        "name": "Zoom",
         "type": "float"
       },
       {
-        "name": "offset",
+        "name": "Offset",
         "type": "ImVec2"
       },
       {
-        "name": "colors[ColMax]",
+        "name": "Colors[ColMax]",
         "size": 8,
         "type": "ImColor"
       },
       {
-        "name": "style",
+        "name": "Style",
         "type": "CanvasStyle"
       },
       {
-        "name": "_impl",
+        "name": "_Impl",
         "type": "_CanvasStateImpl*"
       }
     ],
     "CanvasStyle": [
       {
-        "name": "curve_thickness",
+        "name": "CurveThickness",
         "type": "float"
       },
       {
-        "name": "connection_indent",
+        "name": "ConnectionIndent",
         "type": "float"
       }
     ],
