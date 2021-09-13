@@ -46,7 +46,7 @@ struct SlotInfo
 
 #ifndef CIMGUI_DEFINE_ENUMS_AND_STRUCTS
 typedef ImNodes::CanvasState CanvasState;
-typedef ImNodes::CanvasState::CanvasStyle CanvasStyle;
+typedef struct ImNodes::CanvasState::CanvasStyle CanvasStyle;
 typedef ImNodes::Ez::SlotInfo SlotInfo;
 typedef ImNodes::_CanvasStateImpl _CanvasStateImpl;
 typedef ImNodes::StyleColor StyleColor;
