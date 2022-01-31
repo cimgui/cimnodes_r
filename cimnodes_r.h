@@ -6,12 +6,8 @@
 #include "cimgui.h"
 
 #ifdef CIMGUI_DEFINE_ENUMS_AND_STRUCTS
-typedef struct SlotInfo SlotInfo;
-typedef struct CanvasStyle CanvasStyle;
-typedef struct CanvasState CanvasState;
-typedef struct _CanvasStateImpl _CanvasStateImpl;
 
-struct _CanvasStateImpl;
+typedef struct _CanvasStateImpl _CanvasStateImpl;
 typedef enum {
     ColCanvasLines,
     ColNodeBg,
@@ -23,11 +19,15 @@ typedef enum {
     ColSelectBorder,
     ColMax
 }StyleColor;
+struct _CanvasStateImpl;
+typedef struct CanvasState CanvasState;
 struct CanvasStyle
 {
         float CurveThickness;
         float ConnectionIndent;
 };
+typedef struct CanvasStyle CanvasStyle;
+
 struct CanvasState
 {
     float Zoom;
@@ -36,6 +36,8 @@ struct CanvasState
     CanvasStyle Style;
     _CanvasStateImpl* _Impl;
 };
+typedef struct CanvasStyle CanvasStyle;
+typedef struct SlotInfo SlotInfo;
 struct SlotInfo
 {
     const char* title;
