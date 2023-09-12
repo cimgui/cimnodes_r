@@ -9,7 +9,7 @@
       "constructor": true,
       "defaults": {},
       "funcname": "CanvasState",
-      "location": "ImNodes:73",
+      "location": "ImNodes:71",
       "ov_cimguiname": "CanvasState_CanvasState",
       "signature": "()",
       "stname": "CanvasState"
@@ -28,7 +28,7 @@
       "cimguiname": "CanvasState_destroy",
       "defaults": {},
       "destructor": true,
-      "location": "ImNodes:74",
+      "location": "ImNodes:72",
       "ov_cimguiname": "CanvasState_destroy",
       "realdestructor": true,
       "ret": "void",
@@ -72,7 +72,7 @@
       "cimguiname": "ImNodes_BeginCanvas",
       "defaults": {},
       "funcname": "BeginCanvas",
-      "location": "ImNodes:78",
+      "location": "ImNodes:76",
       "namespace": "ImNodes",
       "ov_cimguiname": "ImNodes_BeginCanvas",
       "ret": "void",
@@ -128,7 +128,7 @@
       "cimguiname": "ImNodes_BeginNode",
       "defaults": {},
       "funcname": "BeginNode",
-      "location": "ImNodes:82",
+      "location": "ImNodes:80",
       "namespace": "ImNodes",
       "ov_cimguiname": "ImNodes_BeginNode",
       "ret": "bool",
@@ -231,7 +231,7 @@
       "cimguiname": "ImNodes_EndCanvas",
       "defaults": {},
       "funcname": "EndCanvas",
-      "location": "ImNodes:80",
+      "location": "ImNodes:78",
       "namespace": "ImNodes",
       "ov_cimguiname": "ImNodes_EndCanvas",
       "ret": "void",
@@ -248,7 +248,7 @@
       "cimguiname": "ImNodes_EndNode",
       "defaults": {},
       "funcname": "EndNode",
-      "location": "ImNodes:84",
+      "location": "ImNodes:82",
       "namespace": "ImNodes",
       "ov_cimguiname": "ImNodes_EndNode",
       "ret": "void",
@@ -268,6 +268,23 @@
       "location": "ImNodes:111",
       "namespace": "ImNodes",
       "ov_cimguiname": "ImNodes_EndSlot",
+      "ret": "void",
+      "signature": "()",
+      "stname": ""
+    }
+  ],
+  "ImNodes_Ez_BeginCanvas": [
+    {
+      "args": "()",
+      "argsT": [],
+      "argsoriginal": "()",
+      "call_args": "()",
+      "cimguiname": "ImNodes_Ez_BeginCanvas",
+      "defaults": {},
+      "funcname": "BeginCanvas",
+      "location": "ImNodesEz:102",
+      "namespace": "ImNodes::Ez",
+      "ov_cimguiname": "ImNodes_Ez_BeginCanvas",
       "ret": "void",
       "signature": "()",
       "stname": ""
@@ -299,11 +316,79 @@
       "cimguiname": "ImNodes_Ez_BeginNode",
       "defaults": {},
       "funcname": "BeginNode",
-      "location": "ImNodesEz:44",
+      "location": "ImNodesEz:106",
       "namespace": "ImNodes::Ez",
       "ov_cimguiname": "ImNodes_Ez_BeginNode",
       "ret": "bool",
       "signature": "(void*,const char*,ImVec2*,bool*)",
+      "stname": ""
+    }
+  ],
+  "ImNodes_Ez_Connection": [
+    {
+      "args": "(void* input_node,const char* input_slot,void* output_node,const char* output_slot)",
+      "argsT": [
+        {
+          "name": "input_node",
+          "type": "void*"
+        },
+        {
+          "name": "input_slot",
+          "type": "const char*"
+        },
+        {
+          "name": "output_node",
+          "type": "void*"
+        },
+        {
+          "name": "output_slot",
+          "type": "const char*"
+        }
+      ],
+      "argsoriginal": "(void* input_node,const char* input_slot,void* output_node,const char* output_slot)",
+      "call_args": "(input_node,input_slot,output_node,output_slot)",
+      "cimguiname": "ImNodes_Ez_Connection",
+      "defaults": {},
+      "funcname": "Connection",
+      "location": "ImNodesEz:118",
+      "namespace": "ImNodes::Ez",
+      "ov_cimguiname": "ImNodes_Ez_Connection",
+      "ret": "bool",
+      "signature": "(void*,const char*,void*,const char*)",
+      "stname": ""
+    }
+  ],
+  "ImNodes_Ez_CreateContext": [
+    {
+      "args": "()",
+      "argsT": [],
+      "argsoriginal": "()",
+      "call_args": "()",
+      "cimguiname": "ImNodes_Ez_CreateContext",
+      "defaults": {},
+      "funcname": "CreateContext",
+      "location": "ImNodesEz:96",
+      "namespace": "ImNodes::Ez",
+      "ov_cimguiname": "ImNodes_Ez_CreateContext",
+      "ret": "Context*",
+      "signature": "()",
+      "stname": ""
+    }
+  ],
+  "ImNodes_Ez_EndCanvas": [
+    {
+      "args": "()",
+      "argsT": [],
+      "argsoriginal": "()",
+      "call_args": "()",
+      "cimguiname": "ImNodes_Ez_EndCanvas",
+      "defaults": {},
+      "funcname": "EndCanvas",
+      "location": "ImNodesEz:103",
+      "namespace": "ImNodes::Ez",
+      "ov_cimguiname": "ImNodes_Ez_EndCanvas",
+      "ret": "void",
+      "signature": "()",
       "stname": ""
     }
   ],
@@ -316,10 +401,50 @@
       "cimguiname": "ImNodes_Ez_EndNode",
       "defaults": {},
       "funcname": "EndNode",
-      "location": "ImNodesEz:46",
+      "location": "ImNodesEz:108",
       "namespace": "ImNodes::Ez",
       "ov_cimguiname": "ImNodes_Ez_EndNode",
       "ret": "void",
+      "signature": "()",
+      "stname": ""
+    }
+  ],
+  "ImNodes_Ez_FreeContext": [
+    {
+      "args": "(Context* ctx)",
+      "argsT": [
+        {
+          "name": "ctx",
+          "type": "Context*"
+        }
+      ],
+      "argsoriginal": "(Context* ctx)",
+      "call_args": "(ctx)",
+      "cimguiname": "ImNodes_Ez_FreeContext",
+      "defaults": {},
+      "funcname": "FreeContext",
+      "location": "ImNodesEz:97",
+      "namespace": "ImNodes::Ez",
+      "ov_cimguiname": "ImNodes_Ez_FreeContext",
+      "ret": "void",
+      "signature": "(Context*)",
+      "stname": ""
+    }
+  ],
+  "ImNodes_Ez_GetState": [
+    {
+      "args": "()",
+      "argsT": [],
+      "argsoriginal": "()",
+      "call_args": "()",
+      "cimguiname": "ImNodes_Ez_GetState",
+      "defaults": {},
+      "funcname": "GetState",
+      "location": "ImNodesEz:100",
+      "namespace": "ImNodes::Ez",
+      "ov_cimguiname": "ImNodes_Ez_GetState",
+      "ret": "CanvasState*",
+      "retref": "&",
       "signature": "()",
       "stname": ""
     }
@@ -342,7 +467,7 @@
       "cimguiname": "ImNodes_Ez_InputSlots",
       "defaults": {},
       "funcname": "InputSlots",
-      "location": "ImNodesEz:50",
+      "location": "ImNodesEz:112",
       "namespace": "ImNodes::Ez",
       "ov_cimguiname": "ImNodes_Ez_InputSlots",
       "ret": "void",
@@ -368,11 +493,179 @@
       "cimguiname": "ImNodes_Ez_OutputSlots",
       "defaults": {},
       "funcname": "OutputSlots",
-      "location": "ImNodesEz:54",
+      "location": "ImNodesEz:116",
       "namespace": "ImNodes::Ez",
       "ov_cimguiname": "ImNodes_Ez_OutputSlots",
       "ret": "void",
       "signature": "(const SlotInfo*,int)",
+      "stname": ""
+    }
+  ],
+  "ImNodes_Ez_PopStyleColor": [
+    {
+      "args": "(int count)",
+      "argsT": [
+        {
+          "name": "count",
+          "type": "int"
+        }
+      ],
+      "argsoriginal": "(int count)",
+      "call_args": "(count)",
+      "cimguiname": "ImNodes_Ez_PopStyleColor",
+      "defaults": {},
+      "funcname": "PopStyleColor",
+      "location": "ImNodesEz:126",
+      "namespace": "ImNodes::Ez",
+      "ov_cimguiname": "ImNodes_Ez_PopStyleColor",
+      "ret": "void",
+      "signature": "(int)",
+      "stname": ""
+    }
+  ],
+  "ImNodes_Ez_PopStyleVar": [
+    {
+      "args": "(int count)",
+      "argsT": [
+        {
+          "name": "count",
+          "type": "int"
+        }
+      ],
+      "argsoriginal": "(int count=1)",
+      "call_args": "(count)",
+      "cimguiname": "ImNodes_Ez_PopStyleVar",
+      "defaults": {
+        "count": "1"
+      },
+      "funcname": "PopStyleVar",
+      "location": "ImNodesEz:122",
+      "namespace": "ImNodes::Ez",
+      "ov_cimguiname": "ImNodes_Ez_PopStyleVar",
+      "ret": "void",
+      "signature": "(int)",
+      "stname": ""
+    }
+  ],
+  "ImNodes_Ez_PushStyleColor": [
+    {
+      "args": "(ImNodesStyleCol idx,ImU32 col)",
+      "argsT": [
+        {
+          "name": "idx",
+          "type": "ImNodesStyleCol"
+        },
+        {
+          "name": "col",
+          "type": "ImU32"
+        }
+      ],
+      "argsoriginal": "(ImNodesStyleCol idx,ImU32 col)",
+      "call_args": "(idx,col)",
+      "cimguiname": "ImNodes_Ez_PushStyleColor",
+      "defaults": {},
+      "funcname": "PushStyleColor",
+      "location": "ImNodesEz:124",
+      "namespace": "ImNodes::Ez",
+      "ov_cimguiname": "ImNodes_Ez_PushStyleColor_U32",
+      "ret": "void",
+      "signature": "(ImNodesStyleCol,ImU32)",
+      "stname": ""
+    },
+    {
+      "args": "(ImNodesStyleCol idx,const ImVec4 col)",
+      "argsT": [
+        {
+          "name": "idx",
+          "type": "ImNodesStyleCol"
+        },
+        {
+          "name": "col",
+          "type": "const ImVec4"
+        }
+      ],
+      "argsoriginal": "(ImNodesStyleCol idx,const ImVec4& col)",
+      "call_args": "(idx,col)",
+      "cimguiname": "ImNodes_Ez_PushStyleColor",
+      "defaults": {},
+      "funcname": "PushStyleColor",
+      "location": "ImNodesEz:125",
+      "namespace": "ImNodes::Ez",
+      "ov_cimguiname": "ImNodes_Ez_PushStyleColor_Vec4",
+      "ret": "void",
+      "signature": "(ImNodesStyleCol,const ImVec4)",
+      "stname": ""
+    }
+  ],
+  "ImNodes_Ez_PushStyleVar": [
+    {
+      "args": "(ImNodesStyleVar idx,float val)",
+      "argsT": [
+        {
+          "name": "idx",
+          "type": "ImNodesStyleVar"
+        },
+        {
+          "name": "val",
+          "type": "float"
+        }
+      ],
+      "argsoriginal": "(ImNodesStyleVar idx,float val)",
+      "call_args": "(idx,val)",
+      "cimguiname": "ImNodes_Ez_PushStyleVar",
+      "defaults": {},
+      "funcname": "PushStyleVar",
+      "location": "ImNodesEz:120",
+      "namespace": "ImNodes::Ez",
+      "ov_cimguiname": "ImNodes_Ez_PushStyleVar_Float",
+      "ret": "void",
+      "signature": "(ImNodesStyleVar,float)",
+      "stname": ""
+    },
+    {
+      "args": "(ImNodesStyleVar idx,const ImVec2 val)",
+      "argsT": [
+        {
+          "name": "idx",
+          "type": "ImNodesStyleVar"
+        },
+        {
+          "name": "val",
+          "type": "const ImVec2"
+        }
+      ],
+      "argsoriginal": "(ImNodesStyleVar idx,const ImVec2 &val)",
+      "call_args": "(idx,val)",
+      "cimguiname": "ImNodes_Ez_PushStyleVar",
+      "defaults": {},
+      "funcname": "PushStyleVar",
+      "location": "ImNodesEz:121",
+      "namespace": "ImNodes::Ez",
+      "ov_cimguiname": "ImNodes_Ez_PushStyleVar_Vec2",
+      "ret": "void",
+      "signature": "(ImNodesStyleVar,const ImVec2)",
+      "stname": ""
+    }
+  ],
+  "ImNodes_Ez_SetContext": [
+    {
+      "args": "(Context* ctx)",
+      "argsT": [
+        {
+          "name": "ctx",
+          "type": "Context*"
+        }
+      ],
+      "argsoriginal": "(Context* ctx)",
+      "call_args": "(ctx)",
+      "cimguiname": "ImNodes_Ez_SetContext",
+      "defaults": {},
+      "funcname": "SetContext",
+      "location": "ImNodesEz:98",
+      "namespace": "ImNodes::Ez",
+      "ov_cimguiname": "ImNodes_Ez_SetContext",
+      "ret": "void",
+      "signature": "(Context*)",
       "stname": ""
     }
   ],
@@ -515,6 +808,23 @@
       "ov_cimguiname": "ImNodes_IsInputSlotKind",
       "ret": "bool",
       "signature": "(int)",
+      "stname": ""
+    }
+  ],
+  "ImNodes_IsNodeHovered": [
+    {
+      "args": "()",
+      "argsT": [],
+      "argsoriginal": "()",
+      "call_args": "()",
+      "cimguiname": "ImNodes_IsNodeHovered",
+      "defaults": {},
+      "funcname": "IsNodeHovered",
+      "location": "ImNodes:84",
+      "namespace": "ImNodes",
+      "ov_cimguiname": "ImNodes_IsNodeHovered",
+      "ret": "bool",
+      "signature": "()",
       "stname": ""
     }
   ],

@@ -1,5 +1,114 @@
 {
   "enums": {
+    "ImNodesStyleCol": [
+      {
+        "calc_value": 0,
+        "name": "ImNodesStyleCol_GridLines",
+        "value": "0"
+      },
+      {
+        "calc_value": 1,
+        "name": "ImNodesStyleCol_NodeBodyBg",
+        "value": "1"
+      },
+      {
+        "calc_value": 2,
+        "name": "ImNodesStyleCol_NodeBodyBgHovered",
+        "value": "2"
+      },
+      {
+        "calc_value": 3,
+        "name": "ImNodesStyleCol_NodeBodyBgActive",
+        "value": "3"
+      },
+      {
+        "calc_value": 4,
+        "name": "ImNodesStyleCol_NodeBorder",
+        "value": "4"
+      },
+      {
+        "calc_value": 5,
+        "name": "ImNodesStyleCol_Connection",
+        "value": "5"
+      },
+      {
+        "calc_value": 6,
+        "name": "ImNodesStyleCol_ConnectionActive",
+        "value": "6"
+      },
+      {
+        "calc_value": 7,
+        "name": "ImNodesStyleCol_SelectBg",
+        "value": "7"
+      },
+      {
+        "calc_value": 8,
+        "name": "ImNodesStyleCol_SelectBorder",
+        "value": "8"
+      },
+      {
+        "calc_value": 9,
+        "name": "ImNodesStyleCol_NodeTitleBarBg",
+        "value": "9"
+      },
+      {
+        "calc_value": 10,
+        "name": "ImNodesStyleCol_NodeTitleBarBgHovered",
+        "value": "10"
+      },
+      {
+        "calc_value": 11,
+        "name": "ImNodesStyleCol_NodeTitleBarBgActive",
+        "value": "11"
+      },
+      {
+        "calc_value": 12,
+        "name": "ImNodesStyleCol_COUNT",
+        "value": "12"
+      }
+    ],
+    "ImNodesStyleVar": [
+      {
+        "calc_value": 0,
+        "name": "ImNodesStyleVar_GridSpacing_r",
+        "value": "0"
+      },
+      {
+        "calc_value": 1,
+        "name": "ImNodesStyleVar_CurveThickness",
+        "value": "1"
+      },
+      {
+        "calc_value": 2,
+        "name": "ImNodesStyleVar_CurveStrength",
+        "value": "2"
+      },
+      {
+        "calc_value": 3,
+        "name": "ImNodesStyleVar_SlotRadius",
+        "value": "3"
+      },
+      {
+        "calc_value": 4,
+        "name": "ImNodesStyleVar_NodeRounding",
+        "value": "4"
+      },
+      {
+        "calc_value": 5,
+        "name": "ImNodesStyleVar_NodeSpacing",
+        "value": "5"
+      },
+      {
+        "calc_value": 6,
+        "name": "ImNodesStyleVar_ItemSpacing",
+        "value": "6"
+      },
+      {
+        "calc_value": 7,
+        "name": "ImNodesStyleVar_COUNT_r",
+        "value": "7"
+      }
+    ],
     "StyleColor": [
       {
         "calc_value": 0,
@@ -50,10 +159,13 @@
   },
   "enumtypes": [],
   "locations": {
-    "CanvasState": "ImNodes:53",
-    "CanvasStyle": "ImNodes:62",
-    "SlotInfo": "ImNodesEz:35",
-    "StyleColor": "ImNodes:38"
+    "CanvasState": "ImNodes:46",
+    "CanvasStyle": "ImNodes:55",
+    "ImNodesStyleCol": "ImNodesEz:44",
+    "ImNodesStyleVar": "ImNodesEz:32",
+    "SlotInfo": "ImNodesEz:69",
+    "StyleColor": "ImNodes:31",
+    "StyleVars": "ImNodesEz:78"
   },
   "structs": {
     "CanvasState": [
@@ -87,6 +199,22 @@
       {
         "name": "ConnectionIndent",
         "type": "float"
+      },
+      {
+        "name": "GridSpacing",
+        "type": "float"
+      },
+      {
+        "name": "CurveStrength",
+        "type": "float"
+      },
+      {
+        "name": "NodeRounding",
+        "type": "float"
+      },
+      {
+        "name": "NodeSpacing",
+        "type": "ImVec2"
       }
     ],
     "SlotInfo": [
@@ -97,6 +225,20 @@
       {
         "name": "kind",
         "type": "int"
+      }
+    ],
+    "StyleVars": [
+      {
+        "name": "SlotRadius",
+        "type": "float"
+      },
+      {
+        "name": "ItemSpacing",
+        "type": "ImVec2"
+      },
+      {
+        "name": "Colors",
+        "type": "struct { ImVec4 NodeBodyBg; ImVec4 NodeBodyBgHovered; ImVec4 NodeBodyBgActive; ImVec4 NodeBorder; ImVec4 NodeTitleBarBg; ImVec4 NodeTitleBarBgHovered; ImVec4 NodeTitleBarBgActive; }"
       }
     ]
   }

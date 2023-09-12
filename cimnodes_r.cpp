@@ -31,6 +31,10 @@ CIMGUI_API void ImNodes_EndNode()
 {
     return ImNodes::EndNode();
 }
+CIMGUI_API bool ImNodes_IsNodeHovered()
+{
+    return ImNodes::IsNodeHovered();
+}
 CIMGUI_API void ImNodes_AutoPositionNode(void* node_id)
 {
     return ImNodes::AutoPositionNode(node_id);
@@ -91,6 +95,30 @@ CIMGUI_API bool ImNodes_IsConnectingCompatibleSlot()
 {
     return ImNodes::IsConnectingCompatibleSlot();
 }
+CIMGUI_API Context* ImNodes_Ez_CreateContext()
+{
+    return ImNodes::Ez::CreateContext();
+}
+CIMGUI_API void ImNodes_Ez_FreeContext(Context* ctx)
+{
+    return ImNodes::Ez::FreeContext(ctx);
+}
+CIMGUI_API void ImNodes_Ez_SetContext(Context* ctx)
+{
+    return ImNodes::Ez::SetContext(ctx);
+}
+CIMGUI_API CanvasState* ImNodes_Ez_GetState()
+{
+    return &ImNodes::Ez::GetState();
+}
+CIMGUI_API void ImNodes_Ez_BeginCanvas()
+{
+    return ImNodes::Ez::BeginCanvas();
+}
+CIMGUI_API void ImNodes_Ez_EndCanvas()
+{
+    return ImNodes::Ez::EndCanvas();
+}
 CIMGUI_API bool ImNodes_Ez_BeginNode(void* node_id,const char* title,ImVec2* pos,bool* selected)
 {
     return ImNodes::Ez::BeginNode(node_id,title,pos,selected);
@@ -106,6 +134,34 @@ CIMGUI_API void ImNodes_Ez_InputSlots(const SlotInfo* slots,int snum)
 CIMGUI_API void ImNodes_Ez_OutputSlots(const SlotInfo* slots,int snum)
 {
     return ImNodes::Ez::OutputSlots(slots,snum);
+}
+CIMGUI_API bool ImNodes_Ez_Connection(void* input_node,const char* input_slot,void* output_node,const char* output_slot)
+{
+    return ImNodes::Ez::Connection(input_node,input_slot,output_node,output_slot);
+}
+CIMGUI_API void ImNodes_Ez_PushStyleVar_Float(ImNodesStyleVar idx,float val)
+{
+    return ImNodes::Ez::PushStyleVar(idx,val);
+}
+CIMGUI_API void ImNodes_Ez_PushStyleVar_Vec2(ImNodesStyleVar idx,const ImVec2 val)
+{
+    return ImNodes::Ez::PushStyleVar(idx,val);
+}
+CIMGUI_API void ImNodes_Ez_PopStyleVar(int count)
+{
+    return ImNodes::Ez::PopStyleVar(count);
+}
+CIMGUI_API void ImNodes_Ez_PushStyleColor_U32(ImNodesStyleCol idx,ImU32 col)
+{
+    return ImNodes::Ez::PushStyleColor(idx,col);
+}
+CIMGUI_API void ImNodes_Ez_PushStyleColor_Vec4(ImNodesStyleCol idx,const ImVec4 col)
+{
+    return ImNodes::Ez::PushStyleColor(idx,col);
+}
+CIMGUI_API void ImNodes_Ez_PopStyleColor(int count)
+{
+    return ImNodes::Ez::PopStyleColor(count);
 }
 
 

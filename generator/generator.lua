@@ -47,6 +47,11 @@ local cimgui_manuals = {
     -- igLogText = true,
     -- ImGuiTextBuffer_appendf = true,
 }
+--this table will provide string substitutions
+local str_subst = {
+	ImNodesStyleVar_GridSpacing = "ImNodesStyleVar_GridSpacing_r", --to avoid name collision with Nelarius/imnodees
+	ImNodesStyleVar_COUNT = "ImNodesStyleVar_COUNT_r"
+}
 --------------------------------------------------------------------------
 --this table is a dictionary to force a naming of function overloading (instead of algorythmic generated)
 --first level is cimguiname without postfix, second level is the signature of the function, value is the
@@ -136,6 +141,7 @@ local function parseImGuiHeader(header,names)
 	parser.cname_overloads = cimgui_overloads
 	parser.manuals = cimgui_manuals
 	parser.UDTs = {"ImVec2","ImVec4","ImColor","ImRect"}
+	parser.str_subst = str_subst
 	
 	local include_cmd = COMPILER=="cl" and [[ /I ]] or [[ -I ]]
 	local extra_includes = include_cmd.." ../../cimgui/imgui ".." -x c++ " --force c++ compiling with gcc (Tp for cl?)
