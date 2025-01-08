@@ -167,6 +167,9 @@
     "StyleColor": "ImNodes:31",
     "StyleVars": "ImNodesEz:78"
   },
+  "nonPOD": {
+    "CanvasState": true
+  },
   "structs": {
     "CanvasState": [
       {

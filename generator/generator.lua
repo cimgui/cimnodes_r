@@ -141,6 +141,7 @@ local function parseImGuiHeader(header,names)
 	parser.cname_overloads = cimgui_overloads
 	parser.manuals = cimgui_manuals
 	parser.UDTs = {"ImVec2","ImVec4","ImColor","ImRect"}
+	parser.cimgui_inherited =  dofile([[../../cimgui/generator/output/structs_and_enums.lua]])
 	parser.str_subst = str_subst
 	
 	local include_cmd = COMPILER=="cl" and [[ /I ]] or [[ -I ]]
