@@ -29,14 +29,14 @@ struct CanvasStyle
         float GridSpacing;
         float CurveStrength;
         float NodeRounding;
-        ImVec2 NodeSpacing;
+        ImVec2_c NodeSpacing;
 };
 typedef struct CanvasStyle CanvasStyle;
 
 struct CanvasState
 {
     float Zoom;
-    ImVec2 Offset;
+    ImVec2_c Offset;
     ImColor Colors[ColMax];
     CanvasStyle Style;
     _CanvasStateImpl* _Impl;
@@ -77,21 +77,25 @@ typedef struct StyleVars StyleVars;
 struct StyleVars
 {
     float SlotRadius;
-    ImVec2 ItemSpacing;
+    ImVec2_c ItemSpacing;
 struct 
 {
-        ImVec4 NodeBodyBg;
-        ImVec4 NodeBodyBgHovered;
-        ImVec4 NodeBodyBgActive;
-        ImVec4 NodeBorder;
-        ImVec4 NodeTitleBarBg;
-        ImVec4 NodeTitleBarBgHovered;
-        ImVec4 NodeTitleBarBgActive;
+        ImVec4_c NodeBodyBg;
+        ImVec4_c NodeBodyBgHovered;
+        ImVec4_c NodeBodyBgActive;
+        ImVec4_c NodeBorder;
+        ImVec4_c NodeTitleBarBg;
+        ImVec4_c NodeTitleBarBgHovered;
+        ImVec4_c NodeTitleBarBgActive;
 } Colors;
 };
 struct Context;
 #else
 #endif // CIMGUI_DEFINE_ENUMS_AND_STRUCTS
+
+
+
+
 
 #ifndef CIMGUI_DEFINE_ENUMS_AND_STRUCTS
 typedef ImNodes::CanvasState CanvasState;
@@ -136,10 +140,10 @@ CIMGUI_API void ImNodes_Ez_InputSlots(const SlotInfo* slots,int snum);
 CIMGUI_API void ImNodes_Ez_OutputSlots(const SlotInfo* slots,int snum);
 CIMGUI_API bool ImNodes_Ez_Connection(void* input_node,const char* input_slot,void* output_node,const char* output_slot);
 CIMGUI_API void ImNodes_Ez_PushStyleVar_Float(ImNodesStyleVar idx,float val);
-CIMGUI_API void ImNodes_Ez_PushStyleVar_Vec2(ImNodesStyleVar idx,const ImVec2 val);
+CIMGUI_API void ImNodes_Ez_PushStyleVar_Vec2(ImNodesStyleVar idx,const ImVec2_c val);
 CIMGUI_API void ImNodes_Ez_PopStyleVar(int count);
 CIMGUI_API void ImNodes_Ez_PushStyleColor_U32(ImNodesStyleCol idx,ImU32 col);
-CIMGUI_API void ImNodes_Ez_PushStyleColor_Vec4(ImNodesStyleCol idx,const ImVec4 col);
+CIMGUI_API void ImNodes_Ez_PushStyleColor_Vec4(ImNodesStyleCol idx,const ImVec4_c col);
 CIMGUI_API void ImNodes_Ez_PopStyleColor(int count);
 
 

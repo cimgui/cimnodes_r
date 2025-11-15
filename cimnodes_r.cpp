@@ -7,7 +7,38 @@
 
 
 
-CIMGUI_API CanvasState* CanvasState_CanvasState(void)
+static inline ImVec2 ConvertToCPP_ImVec2(const ImVec2_c& src)
+{
+    ImVec2 dest;
+    dest.x = src.x;
+    dest.y = src.y;
+    return dest;
+}
+static inline ImVec2_c ConvertFromCPP_ImVec2(const ImVec2& src)
+{
+    ImVec2_c dest;
+    dest.x = src.x;
+    dest.y = src.y;
+    return dest;
+}
+static inline ImVec4 ConvertToCPP_ImVec4(const ImVec4_c& src)
+{
+    ImVec4 dest;
+    dest.x = src.x;
+    dest.y = src.y;
+    dest.z = src.z;
+    dest.w = src.w;
+    return dest;
+}
+static inline ImVec4_c ConvertFromCPP_ImVec4(const ImVec4& src)
+{
+    ImVec4_c dest;
+    dest.x = src.x;
+    dest.y = src.y;
+    dest.z = src.z;
+    dest.w = src.w;
+    return dest;
+}CIMGUI_API CanvasState* CanvasState_CanvasState(void)
 {
     return IM_NEW(CanvasState)();
 }
@@ -143,9 +174,9 @@ CIMGUI_API void ImNodes_Ez_PushStyleVar_Float(ImNodesStyleVar idx,float val)
 {
     return ImNodes::Ez::PushStyleVar(idx,val);
 }
-CIMGUI_API void ImNodes_Ez_PushStyleVar_Vec2(ImNodesStyleVar idx,const ImVec2 val)
+CIMGUI_API void ImNodes_Ez_PushStyleVar_Vec2(ImNodesStyleVar idx,const ImVec2_c val)
 {
-    return ImNodes::Ez::PushStyleVar(idx,val);
+    return ImNodes::Ez::PushStyleVar(idx,ConvertToCPP_ImVec2(val));
 }
 CIMGUI_API void ImNodes_Ez_PopStyleVar(int count)
 {
@@ -155,9 +186,9 @@ CIMGUI_API void ImNodes_Ez_PushStyleColor_U32(ImNodesStyleCol idx,ImU32 col)
 {
     return ImNodes::Ez::PushStyleColor(idx,col);
 }
-CIMGUI_API void ImNodes_Ez_PushStyleColor_Vec4(ImNodesStyleCol idx,const ImVec4 col)
+CIMGUI_API void ImNodes_Ez_PushStyleColor_Vec4(ImNodesStyleCol idx,const ImVec4_c col)
 {
-    return ImNodes::Ez::PushStyleColor(idx,col);
+    return ImNodes::Ez::PushStyleColor(idx,ConvertToCPP_ImVec4(col));
 }
 CIMGUI_API void ImNodes_Ez_PopStyleColor(int count)
 {
