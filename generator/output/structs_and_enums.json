@@ -261,6 +261,10 @@
     "ImVec4": "inherited",
     "ImVector": "inherited"
   },
+  "nonPOD_used": {
+    "ImVec2": "inherited",
+    "ImVec4": "inherited"
+  },
   "structs": {
     "CanvasState": [
       {
