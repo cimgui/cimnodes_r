@@ -11,6 +11,7 @@ local t={
       defaults={},
       funcname="CanvasState",
       location="ImNodes:71",
+      namespace="ImNodes::CanvasState",
       ov_cimguiname="CanvasState_CanvasState",
       signature="()",
       stname="CanvasState"},

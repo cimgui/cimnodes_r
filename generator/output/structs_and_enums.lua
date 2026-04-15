@@ -229,6 +229,7 @@ local t={
   nonPOD_used={
     ImVec2="inherited",
     ImVec4="inherited"},
+  opaque_structs={},
   structs={
     CanvasState={
       [1]={
